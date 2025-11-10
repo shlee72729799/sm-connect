@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# IDE / Editor
+.idea/
+.vscode/
+
+# Node / Vite (frontend)
+sc-frontend/node_modules/
+sc-frontend/dist/
+sc-frontend/.vite/
+
+# Gradle / Spring (backend)
+sc-backend/.gradle/
+sc-backend/build/
+sc-backend/out/
+sc-backend/bin/
+
+# Logs & temp files
+*.log
+*.tmp
+
+# Environment files
+.env
+*.env
+sc-frontend/.env
+sc-frontend/.env.*
+

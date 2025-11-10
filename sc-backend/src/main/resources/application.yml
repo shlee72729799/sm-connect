@@ -1,0 +1,25 @@
+
+spring:
+  # H2 Database ??
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: ${SPRING_DATASOURCE_URL:jdbc:h2:mem:test}   # H2 DB ?? ?? (In-Memory Mode)
+    #url: ${SPRING_DATASOURCE_URL_FILE:jdbc:h2:~/test}    # H2 DB ?? ?? (Embedded Mode)
+    username: ${SPRING_DATASOURCE_USERNAME:user}        # H2 DB ?? ID (??? ??)
+    password: ${SPRING_DATASOURCE_PASSWORD:12345678}        # H2 DB ?? PW (??? ??)
+
+  # H2 Console ??
+  h2:
+    console: # H2 DB? ??? ??? ? ?? ??
+      enabled: true           # H2 Console ?? ??
+      path: /h2-console       # H2 Console ?? ??
+
+  # JPA ??
+  jpa:
+    hibernate:
+      ddl-auto: create        # DB ??? ?? (none, create, create-drop, update, validate)
+    open-in-view: false       # JPA open-in-view ?? ??
+    properties:
+      hibernate:
+        format_sql: true      # ?? ?? ?? (??)
+        show_sql: true        # ?? ?? ?? 
